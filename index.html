@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="gamelist">
+        <span><img src="./images/ico_pubg.png" alt="배그"><span id="battle">배틀그라운드</span></span>
+        <span><img src="./images/logo-game-bser.png" alt="리턴"><span id="return">이터널 리턴</span></span>
+         <span><img src="./images/logo-wz.png" alt="워존"><span id="wz">워존</span></span>
+         <span><img src="./images/logo-valorant.svg" alt="발로란트"><span id="val">발로란트</span></span>
+         <span><img src="./images/ico_lol.png" alt="lol"><span id="lol">리그오브레전드</span></span>
+         <span><img src="./images/ico_tft_lolchess.png" alt="롤체"><span id="lolchess">전략적 팀 전투</span></span>
+         <span><img src="./images/ico_lor.png" alt="룬테라"><span id="runn">룬테라</span></span>
+         <span><img src="./images/symbol-apexlegends@2x.png" alt="에이펙스"><span id="apex">에이펙스레전드</span></span>
+          <span><img src="./images/logo_gnb_maplestory.png" alt="메이플"><span id="maple">메이플스토리</span></span>
+          
+          <div class="listlang">
+            <img src="./images/worldlang.png" id="worldlang" alt="지구본">
+            <select id="lang" style="background-color: #3a3f4c; color:white; border:none;">
+              <option value="korean">한국어</option>
+              <option value="english">English</option>
+              <option value="japan">日本語</option>
+              <option value="china">中国人</option>
+              <option value="deutsch">Deutsch</option>
+            </select>
+          </div>  
+      </div>
+
+      <div class="banner">
+        <span class="bannerlogo">
+          <span>
+            <img src="./images/ico_tft_lolchess.png" alt="롤토체스"><span>LoLCHESS.GG</span>
+            <span>롤체지지</span>
+          </span>
+        </span>
+        <span class="rightbanner">
+          <span class="serverlist">
+            <select  id="server" style="color:red; border:none;">
+            <option value="korean" selected>KR</option>
+            <option value="br">BR</option>
+            <option value="eune">EUNE</option>
+            <option value="euw">EUW</option>
+            <option value="jp">JP</option>
+            <option value="lan">LAN</option>
+            <option value="las">LAS</option>
+            <option value="na">NA</option>
+            <option value="oce">OCE</option>
+            <option value="tr">TR</option>
+            <option value="ru">RU</option>
+            </select>
+          </span>
+          <span>
+            <input type="text" placeholder="소환사 검색" id="text1" style="color:red; border:none;">
+          </span>
+          <span>
+            <button type="submit" id="btn1" style="border:none;"><img src="./images/redsearch.png" alt="빨간돋보기" id="redsearch"></button>
+          </span>
+        </span>
+      </div>
+
+      <div class="menubar">
+        <span class="menu1">
+          <span class="underline">가이드</span>
+          <span class="underline">추천 메타</span>
+          <span class="underline">천상계 덱</span>
+          <span class="underline">아이템 통계</span>
+        </span>
+
+        <span class="vline"></span>
+
+        <span class="menu2">
+          <span class="underline">순위표</span>
+          <span class="underline">즐겨찾기</span>
+        </span>
+
+        <span class="vline"></span>
+
+        <span class="menu3">
+          <span id="seasonbox">시즌7</span>
+          <span class="underline">증강</span>
+          <span class="underline">챔피언</span>
+          <span class="underline">시너지</span>
+          <span class="underline">아이템</span>
+          <span class="underline">족보</span>
+        </span>
+
+        <span class="vline"></span>
+
+        <span class="menu4">
+          <span class="underline">배치툴</span>
+          <span class="underline">시뮬레이터</span>
+        </span>
+
+        <span class="vline"></span>
+        
+        <span class="menu5">
+          <span class="underline">커뮤니티</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="mainimage">
+        <div class="mainlogotitle">
+          <div>
+            <span class="mainbar1">
+              <img src="./images/ico_tft_lolchess.png" alt="롤토체스" class="mainlogo"><span>LoLCHESS.GG</span>
+            </span>
+          </div>
+        </div>
+  
+        <div class="mainsearch">
+          <span>
+            <select class="mainsearch1">
+              <option value="korean" selected>KR</option>
+              <option value="br">BR</option>
+              <option value="eune">EUNE</option>
+              <option value="euw">EUW</option>
+              <option value="jp">JP</option>
+              <option value="lan">LAN</option>
+              <option value="las">LAS</option>
+              <option value="na">NA</option>
+              <option value="oce">OCE</option>
+              <option value="tr">TR</option>
+              <option value="ru">RU</option>
+            </select>
+          </span>
+
+          <span>
+            <input type="text" placeholder="소환사 검색" id="maintext">
+          </span>
+          <span><img src="./images/redsearch.png" alt="돋보기" id="searchdogo"></span>
+        </div>
+          
+        <div>
+          <img src="./images/bannernaver.png" alt="네이버">
+        </div>
+      </div>
+
+      <div class="adcontainer">
+        <div>
+          <img src="./images/adcontainer.png" alt="광고" id="adimg">
+        </div>
+      </div>
+
+      <div class="version">
+        <h1>v12.13 (시즌7) 추천 메타</h1>
+      </div>
+
+      <div class="metapick">
+        <span class="metaimg"><img src="./images/metaimg1.png" alt="메타덱1" style="width:1000px;height: 80px;"><button type="button" class="metabtn">공략 더 보기</button></span>
+        <span class="metaimg"><img src="./images/metaimg2.png" alt="메타덱2" style="width:1000px;height: 80px;"><button type="button" class="metabtn">공략 더 보기</button></span>
+        <span class="metaimg"><img src="./images/metaimg3.png" alt="메타덱3" style="width:1000px;height: 80px;"><button type="button" class="metabtn">공략 더 보기</button></span>
+        <span class="metaimg"><img src="./images/metaimg4.png" alt="메타덱4" style="width:1000px;height: 90px;"><button type="button" class="metabtn">공략 더 보기</button></span>
+        <span class="metaimg"><img src="./images/metaimg5.png" alt="메타덱5" style="width:1000px;height: 80px;"><button type="button" class="metabtn">공략 더 보기</button></span>
+      </div>
+
+      <div class="plusbtn">
+        <button type="button" class="plus">
+          <strong>+</strong>더 보기
+        </button>
+      </div>
+
+      <div class="youtube">
+        <iframe src="https://www.youtube.com/watch?v=SiqNVwkXCls&t=4s" name="youtube1"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=b9YBj_TZw2E" name="youtube2"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=Zlql60i7pwY" name="youtube3"></iframe>
+      </div>
+
+      <div class="version">
+        <h1>시즌7: 용의 땅 프리뷰</h1>
+        <h1>TFT 정보</h1>
+      </div>
+
+      <div class="preview">
+        <div class="sol">
+          <div class="solimg">
+            <div class="solword">
+              <span class="word">아우렐리온 솔</span>
+              <span class="word">G 10</span>
+            </div>
+          </div>
+          <div class="solex">
+            <img src="./images/solex.png" alt="솔설명" class="previewimg">
+          </div>
+        </div>
+
+        <div class="bard">
+          <div class="bardimg">
+            <div class="bardword">
+              <span class="word">바드</span>
+              <span class="word">G 5</span>
+            </div>
+          </div>
+          <div class="solex">
+            <img src="./images/bardex.png" alt="솔설명" class="previewimg">
+          </div>
+        </div>
+
+        <div class="soraka">
+          <div class="sorakaimg">
+            <div class="sorakaword">
+              <span class="word">소라카</span>
+              <span class="word">G 5</span>
+            </div>
+          </div>
+          <div class="sorakaex">
+            <img src="./images/bardex.png" alt="솔설명" class="previewimg">
+          </div>
+        </div>
+
+        <div class="tftinform">
+          <table class="tfttable">
+            <tr><td>12.13 전략적 팀 전투 패치 노트(7월13일)</td></tr>
+            <tr><td>12.12 전략적 팀 전투 패치(6월 23일)</td></tr>
+            <tr><td>12.11 전략적 팀 전투 패치(6월 8일)</td></tr>
+            <tr><td>12.10 전략적 팀 전투 패치(5월 25일)</td></tr>
+            <tr><td>밸런스 패치</td></tr>
+            <tr><td>정보글</td></tr>
+            <tr><td>정보글</td></tr>
+            <tr><td>게시글</td></tr>
+            <tr><td>게시글</td></tr>
+            <tr><td>게시글</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <div class="previewbtn">
+        <button type="button" class="chambtn">
+          챔피언 전체보기
+        </button>
+        <button type="button" class="synergybtn">
+          시너지 전체보기
+        </button>
+      </div>
+
+      <div class="ranking">
+        <div class="rankword">
+          <h1>글로벌 TOP 10</h1>
+        </div>
+        <div>
+          <table class="ranktable">
+            <thead>
+              <tr>
+                <th class="rank">순위</th>
+                <th class="region">지역</th>
+                <th class="summoner">소환사</th>
+                <th class="tier">티어</th>
+                <th class="lp">LP</th>
+                <th class="winrate">승률</th>
+                <th class="wincount">승</th>
+                <th class="losecount">패</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="rank">1</td>
+                <td class="region">KR</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg1.png" alt="소환사아이콘" class="summonerimg">이십오살</td>
+                <td class="tier">MASTER</td>
+                <td class="lp">0 LP</td>
+                <td class="winrate">23.6%</td>
+                <td class="wincount">101승</td>
+                <td class="losecount">17패</td>
+              </tr>
+              <tr>
+                <td class="rank">2</td>
+                <td class="region">CHN</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg2.png" alt="소환사아이콘" class="summonerimg">가좌동쇼메이커</td>
+                <td class="tier">DIAMOND&#8547</td>
+                <td class="lp">74 LP</td>
+                <td class="winrate">16.3%</td>
+                <td class="wincount">93승</td>
+                <td class="losecount">23패</td>
+              </tr>
+              <tr>
+                <td class="rank">3</td>
+                <td class="region">KR</td>
+                <td class="summoner"><img src="./images/summonerimg3.png" alt="소환사아이콘" class="summonerimg">복학왕이우섭</td>
+                <td class="tier">DIAMOND&#8547</td>
+                <td class="lp">48 LP</td>
+                <td class="winrate">14.5%</td>
+                <td class="wincount">87승</td>
+                <td class="losecount">39패</td>
+              </tr>
+              <tr>
+                <td class="rank">4</td>
+                <td class="region">KR</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg4.png" alt="소환사아이콘" class="summonerimg">귀여운아기고양이</td>
+                <td class="tier">PLATINUM&#8546</td>
+                <td class="lp">13 LP</td>
+                <td class="winrate">9.13%</td>
+                <td class="wincount">71승</td>
+                <td class="losecount">43패</td>
+              </tr>
+              <tr>
+                <td class="rank">5</td>
+                <td class="region">KR</td>
+                <td class="summoner"><img src="./images/summonerimg1.png" alt="소환사아이콘" class="summonerimg">바다미꾸라지</td>
+                <td class="tier">GOLD&#8546</td>
+                <td class="lp">70 LP</td>
+                <td class="winrate">8.51%</td>
+                <td class="wincount">62승</td>
+                <td class="losecount">58패</td>
+              </tr>
+              <tr>
+                <td class="rank">6</td>
+                <td class="region">KR</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg2.png" alt="소환사아이콘" class="summonerimg">예쁜말하기</td>
+                <td class="tier">SLIVER&#8547</td>
+                <td class="lp">49 LP</td>
+                <td class="winrate">6.91%</td>
+                <td class="wincount">53승</td>
+                <td class="losecount">66패</td>
+              </tr>
+              <tr>
+                <td class="rank">7</td>
+                <td class="region">KR</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg3.png" alt="소환사아이콘" class="summonerimg">가좌동기인</td>
+                <td class="tier">SLIVER&#8547</td>
+                <td class="lp">34 LP</td>
+                <td class="winrate">6.3%</td>
+                <td class="wincount">40승</td>
+                <td class="losecount">71패</td>
+              </tr>
+              <tr>
+                <td class="rank">8</td>
+                <td class="region">JPN</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg4.png" alt="소환사아이콘" class="summonerimg">고양이꼬리싹둑</td>
+                <td class="tier">SLIVER&#8547</td>
+                <td class="lp">20 LP</td>
+                <td class="winrate">5.4%</td>
+                <td class="wincount">33승</td>
+                <td class="losecount">87패</td></tr>
+              <tr>
+                <td class="rank">9</td>
+                <td class="region">KR</td>
+                <td class="summoner">
+                  <img src="./images/summonerimg1.png" alt="소환사아이콘" class="summonerimg">될때까지한다</td>
+                <td class="tier">BRONZE&#8544</td>
+                <td class="lp">88 LP</td>
+                <td class="winrate">4.4%</td>
+                <td class="wincount">27승</td>
+                <td class="losecount">96패</td>
+              </tr>
+              <tr>
+                <td class="rank">10</td>
+                <td class="region">KR</td>
+                <td class="summoner"><img src="./images/summonerimg2.png" alt="소환사아이콘" class="summonerimg">찡찡승은</td>
+                <td class="tier">IRON&#8546</td>
+                <td class="lp">15 LP</td>
+                <td class="winrate">3.4%</td>
+                <td class="wincount">11승</td>
+                <td class="losecount">108패</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="8">더 보기</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="footer">
+      © LoLCHESS.GG. All Rights Reserved. TFT@LoLCHESS.GG<br>
+      lolchess.gg is hosted by PlayXP Inc. lolchess.gg isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in<br> producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot<br> Games, Inc.<br>
+      개인정보 처리방침 / 이용약관
+    </div>
+  </div>
+</body>
+</html>
